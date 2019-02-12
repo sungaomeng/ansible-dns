@@ -108,6 +108,7 @@ cd ansible-dns
  #1.修改masters/slaves主机地址
  #2.修改ssh账户密码
  #3.修改转发dns地址/zones等dns参数
+ #将roles/dns-master/files/seetestdns.com.zone 更改为自己的zones文件和内容
 ansible all -m ping
 ansible-playbook deploy.yml
 ```
