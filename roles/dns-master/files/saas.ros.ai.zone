@@ -1,0 +1,38 @@
+$TTL 3H
+@       IN SOA  saas.ros.ai admin.saas.ros.ai (
+                                        2019021101; serial
+                                        10M     ; refresh
+                                        5M      ; retry
+                                        1D      ; expire
+                                        2D )    ; minimum
+    IN    NS    ns1
+    IN    NS    ns2
+ns1    IN    A    192.168.1.68
+ns2    IN    A    192.168.1.69
+neo4j01 IN A 192.168.1.61
+kafka01 IN A 192.168.1.60
+kafka02 IN A 192.168.1.60
+kafka03 IN A 192.168.1.60
+zookeeper01 IN A 192.168.1.60
+zookeeper02 IN A 192.168.1.60
+zookeeper03 IN A 192.168.1.60
+ai-redis01 IN A 192.168.1.61
+ai-chates01 IN A 192.168.1.61
+ai-queryes01 IN A 192.168.1.61
+hadoopmaster01 IN A 192.168.1.62
+storm01 IN A 192.168.1.62
+ai-user-mysqlmaster01 IN A 192.168.1.61
+ai-user-mysqlslave01 IN A 192.168.1.61
+ai-logs-mysqlmaster01 IN A 192.168.1.61
+ai-logs-mysqlslave01 IN A 192.168.1.61
+ai-bot-mysqlmaster01 IN A 192.168.1.61
+ai-bot-mysqlslave01 IN A 192.168.1.61
+smartgate-user.mysqlmaster01 IN A 192.168.1.61
+smartgate-user.mysqlslave01 IN A 192.168.1.61
+smartgate-logs.mysqlmaster01 IN A 192.168.1.61
+smartgate-logs.mysqlslave01 IN A 192.168.1.61
+smartgate-redis01 IN A 192.168.1.61
+server-auth.mysqlmaster01 IN A 192.168.1.61
+server-auth.mysqlslave01 IN A 192.168.1.61
+server-redis01 IN A 192.168.1.61
+license-center01 IN A 192.168.1.61

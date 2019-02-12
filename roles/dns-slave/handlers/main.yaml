@@ -1,0 +1,9 @@
+- name: Restart named daemon
+  systemd:
+    name: named
+    daemon_reload: yes
+    state: restarted
+    enabled: yes
+
+- name: Reload named daemon
+  service: name=named state=reloaded
