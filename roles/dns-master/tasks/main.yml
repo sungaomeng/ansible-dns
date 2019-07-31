@@ -30,7 +30,7 @@
     - Restart named daemon
 
 - name: Add zone databases
-  copy: src={{ item }}.zone dest=/var/named/{{ item }}.zone mode=0640 owner=root group=named 
+  copy: src={{ item }}.zone dest=/var/named/masters/{{ item }}.zone mode=0640 owner=root group=named 
   with_items: "{{ zones_list }}"
   notify:
     - Reload named daemon
