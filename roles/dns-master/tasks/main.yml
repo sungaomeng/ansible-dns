@@ -14,6 +14,13 @@
     owner: named
     group: named
 
+- name: Create masters dir
+  file:
+    path: "/var/named/masters"
+    state: directory
+    owner: named
+    group: named
+
 - name: Config to bind9
   template: src={{ item }} dest=/etc/{{ item }} mode=0640 owner=root group=named
   with_items:

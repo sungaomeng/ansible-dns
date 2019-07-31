@@ -46,9 +46,8 @@ view internal {
 	                {{ ip }};
                    {% endfor %}
                 };
-		file "{{ zonename }}.zone";
+		file "slaves/{{ zonename }}.zone";
 		allow-update { none; };
-		allow-transfer { slaves; };
 	};
         
 {% endfor %}

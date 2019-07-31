@@ -41,9 +41,8 @@ view internal {
 {% for zonename in zones_list %}
 	zone "{{ zonename }}" IN {
 		type master;
-		file "{{ zonename }}.zone";
-		allow-update { none; };
-		allow-transfer { slaves; };
+		file "masters/{{ zonename }}.zone";
+                allow-update { none; };
 	};
         
 {% endfor %}
