@@ -14,7 +14,7 @@ ansible_become_method=sudo
 
 forwarder_list=["114.114.114.114","8.8.8.8"]
 #转发dns的地址列表
-internal_list=["192.168.1.0/24"]
+internal_list=["192.168.0.0/16","10.0.0.0/8"]
 #内部网络地址列表，表示允许递归查询的客户端列表，一般为内部服务器ip所在的网段
 zones_list=["seetestdns.com"]
 #指定区域名称的列表
